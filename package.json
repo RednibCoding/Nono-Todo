@@ -1,0 +1,28 @@
+{
+  "name": "nono-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.3.1",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "nono.todo.app",
+    "win": {
+      "target": "portable",
+      "icon": "assets/icons/icon.ico"
+    },
+    "portable": {
+      "unicode": false,
+      "artifactName": "Nono Todo.exe"
+    }
+  }
+}
